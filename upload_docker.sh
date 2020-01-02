@@ -5,11 +5,16 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=maxboyko/devops-ml-microservice-kubernetes:v1
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login --username maxboyko
+docker image tag api $dockerpath
+
+
 
 # Step 3:
 # Push image to a docker repository
+docker image push $dockerpath
