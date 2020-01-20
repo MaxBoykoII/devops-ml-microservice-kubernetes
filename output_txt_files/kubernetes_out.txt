@@ -1,1 +1,5 @@
-<paste log output from Kubernetes-mediated prediction, here>
+NAME                                      READY   STATUS    RESTARTS   AGE
+devops-ml-microservice-67c78b57fd-q5tms   1/1     Running   0          105s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
