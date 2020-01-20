@@ -8,6 +8,8 @@ The model used in this project is a pre-trained, `sklearn` model that predicts h
 
 The project includes scripts for creating a docker image of the flask app, uploading this image, and for running the image through Kubernetes.
 
+Circleci has been integrated into the project and is used for automatically linting project files.
+
 ## Setup the Environment
 
 - Create a virtualenv and activate it
