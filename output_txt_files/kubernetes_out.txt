@@ -1,5 +1,27 @@
 NAME                                      READY   STATUS    RESTARTS   AGE
-devops-ml-microservice-67c78b57fd-q5tms   1/1     Running   0          105s
+devops-ml-microservice-67c78b57fd-5mw4f   1/1     Running   0          64s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 262-253-076
+[2020-01-21 06:53:23,311] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}      
+[2020-01-21 06:53:23,323] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-21 06:53:23,330] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-21 06:53:23,334] INFO in app: Inference scaled payload:
+[[0. 0. 0. 0. 0. 0.]]
+[2020-01-21 06:53:23,334] INFO in app: Prediction:
+ [20.35373177134412]
+127.0.0.1 - - [21/Jan/2020 06:53:23] "POST /predict HTTP/1.1" 200 -
